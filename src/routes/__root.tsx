@@ -88,7 +88,7 @@ export const Route = createRootRouteWithContext<{ queryClient: QueryClient }>()(
       {
         property: "og:description",
         content:
-          "Portfolio of Angelica Unclara — AI Automation Specialist and Marketing Operations Professional. Practical workflows built with n8n, Python, APIs, OCR, and data automation.",
+          "Explore the portfolio of Angelica Unclara, an AI Automation Specialist and Marketing Operations Professional building practical workflows with n8n, Python, APIs, OCR, Slack, Outlook, Google Sheets, and data automation.",
       },
       { property: "og:type", content: "website" },
       { name: "twitter:card", content: "summary_large_image" },
@@ -96,9 +96,11 @@ export const Route = createRootRouteWithContext<{ queryClient: QueryClient }>()(
       {
         name: "twitter:description",
         content:
-          "AI Automation Specialist & Marketing Operations Professional. Building reliable workflows with n8n, Python, APIs, OCR, and data automation.",
+          "Explore the portfolio of Angelica Unclara, an AI Automation Specialist and Marketing Operations Professional building practical workflows with n8n, Python, APIs, OCR, Slack, Outlook, Google Sheets, and data automation.",
       },
       { name: "theme-color", content: "#030712" },
+      { property: "og:image", content: "https://pub-bb2e103a32db4e198524a2e9ed8f35b4.r2.dev/2d4344ac-757a-4c30-9ea3-dbe025195217/id-preview-de2dad19--127561b7-33fc-4057-8beb-5ce65ed9b356.lovable.app-1784906095421.png" },
+      { name: "twitter:image", content: "https://pub-bb2e103a32db4e198524a2e9ed8f35b4.r2.dev/2d4344ac-757a-4c30-9ea3-dbe025195217/id-preview-de2dad19--127561b7-33fc-4057-8beb-5ce65ed9b356.lovable.app-1784906095421.png" },
     ],
     links: [
       { rel: "stylesheet", href: appCss },
