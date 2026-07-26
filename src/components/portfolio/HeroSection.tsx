@@ -4,6 +4,7 @@ import { credibility, profile } from "@/data/portfolio";
 import { GradientButton } from "./GradientButton";
 import { SocialLinks } from "./SocialLinks";
 import { WorkflowDiagram } from "./WorkflowDiagram";
+import { HeroPortrait } from "./HeroPortrait";
 
 export function HeroSection() {
   return (
@@ -12,7 +13,7 @@ export function HeroSection() {
       <div className="absolute inset-0 grid-lines opacity-30" />
 
       <div className="relative mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
-        <div className="grid gap-16 lg:grid-cols-[1.05fr_0.95fr] lg:gap-10 items-center">
+        <div className="grid gap-16 lg:grid-cols-[1.05fr_0.95fr] lg:gap-12 items-center">
           <motion.div
             initial={{ opacity: 0, y: 30 }}
             animate={{ opacity: 1, y: 0 }}
@@ -23,13 +24,21 @@ export function HeroSection() {
               AI Automation Specialist • Marketing Operations
             </div>
 
-            <p className="mt-6 text-sm md:text-base text-muted-foreground">Hi, I&apos;m Angelica Unclara.</p>
+            <p className="mt-6 text-sm md:text-base text-muted-foreground">Hi, I&apos;m</p>
 
-            <h1 className="mt-3 text-4xl sm:text-5xl md:text-6xl lg:text-[64px] font-semibold leading-[1.05] tracking-tight text-gradient">
-              I build intelligent workflows that turn repetitive operations into reliable automated systems.
+            <h1 className="mt-2 text-5xl sm:text-6xl md:text-7xl font-semibold leading-[1.02] tracking-tight text-gradient">
+              AicaDev
             </h1>
 
-            <p className="mt-6 max-w-xl text-base md:text-lg text-muted-foreground leading-relaxed">
+            <p className="mt-4 text-base md:text-xl font-medium text-foreground/90">
+              AI Automation Specialist · Marketing Operations · Workflow Automation · Tech-Driven Problem Solver
+            </p>
+
+            <h2 className="mt-6 max-w-xl text-lg md:text-2xl font-semibold leading-snug tracking-tight text-foreground">
+              I build intelligent workflows that turn repetitive operations into reliable automated systems.
+            </h2>
+
+            <p className="mt-5 max-w-xl text-base text-muted-foreground leading-relaxed">
               I combine hands-on marketing operations experience with workflow automation, AI tools, APIs, OCR, and data
               processing to streamline email, document, spreadsheet, CRM, database, and team communication workflows.
             </p>
@@ -63,12 +72,22 @@ export function HeroSection() {
             animate={{ opacity: 1, scale: 1 }}
             transition={{ duration: 0.9, delay: 0.2, ease: [0.22, 1, 0.36, 1] }}
           >
-            <WorkflowDiagram />
+            <HeroPortrait />
           </motion.div>
         </div>
 
+        <motion.div
+          initial={{ opacity: 0, y: 24 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          viewport={{ once: true }}
+          transition={{ duration: 0.6 }}
+          className="mt-20"
+        >
+          <WorkflowDiagram />
+        </motion.div>
+
         {/* Credibility cards */}
-        <div className="mt-20 grid gap-5 md:grid-cols-3">
+        <div className="mt-14 grid gap-5 md:grid-cols-3">
           {credibility.map((c, i) => (
             <motion.div
               key={c.title}
@@ -84,6 +103,7 @@ export function HeroSection() {
           ))}
         </div>
       </div>
+
     </section>
   );
 }
