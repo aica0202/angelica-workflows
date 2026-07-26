@@ -77,26 +77,26 @@ export const Route = createRootRouteWithContext<{ queryClient: QueryClient }>()(
     meta: [
       { charSet: "utf-8" },
       { name: "viewport", content: "width=device-width, initial-scale=1" },
-      { title: "Angelica Unclara | AI Automation Specialist" },
+      { title: "AicaDev | AI Automation Specialist" },
       {
         name: "description",
         content:
-          "Explore the portfolio of Angelica Unclara, an AI Automation Specialist and Marketing Operations Professional building practical workflows with n8n, Python, APIs, OCR, Slack, Outlook, Google Sheets, and data automation.",
+          "Explore the portfolio of AicaDev, an AI Automation Specialist and Marketing Operations Professional building practical workflows with n8n, Python, APIs, OCR, Slack, Outlook, Google Sheets, and data automation.",
       },
-      { name: "author", content: "Angelica Unclara" },
-      { property: "og:title", content: "Angelica Unclara | AI Automation Specialist" },
+      { name: "author", content: "AicaDev" },
+      { property: "og:title", content: "AicaDev | AI Automation Specialist" },
       {
         property: "og:description",
         content:
-          "Explore the portfolio of Angelica Unclara, an AI Automation Specialist and Marketing Operations Professional building practical workflows with n8n, Python, APIs, OCR, Slack, Outlook, Google Sheets, and data automation.",
+          "Explore the portfolio of AicaDev, an AI Automation Specialist and Marketing Operations Professional building practical workflows with n8n, Python, APIs, OCR, Slack, Outlook, Google Sheets, and data automation.",
       },
       { property: "og:type", content: "website" },
       { name: "twitter:card", content: "summary_large_image" },
-      { name: "twitter:title", content: "Angelica Unclara | AI Automation Specialist" },
+      { name: "twitter:title", content: "AicaDev | AI Automation Specialist" },
       {
         name: "twitter:description",
         content:
-          "Explore the portfolio of Angelica Unclara, an AI Automation Specialist and Marketing Operations Professional building practical workflows with n8n, Python, APIs, OCR, Slack, Outlook, Google Sheets, and data automation.",
+          "Explore the portfolio of AicaDev, an AI Automation Specialist and Marketing Operations Professional building practical workflows with n8n, Python, APIs, OCR, Slack, Outlook, Google Sheets, and data automation.",
       },
       { name: "theme-color", content: "#030712" },
       { property: "og:image", content: "https://pub-bb2e103a32db4e198524a2e9ed8f35b4.r2.dev/2d4344ac-757a-4c30-9ea3-dbe025195217/id-preview-de2dad19--127561b7-33fc-4057-8beb-5ce65ed9b356.lovable.app-1784906095421.png" },
