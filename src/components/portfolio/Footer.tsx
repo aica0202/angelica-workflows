@@ -69,7 +69,7 @@ export function Footer() {
         </div>
 
         <div className="mt-10 flex flex-wrap items-center justify-between gap-3 border-t border-border pt-6 text-xs text-muted-foreground">
-          <p>© 2026 Angelica Unclara. All rights reserved.</p>
+          <p>© 2026 AicaDev. All rights reserved.</p>
           <p>{profile.location} · {profile.availability}</p>
         </div>
       </div>
