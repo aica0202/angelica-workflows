@@ -5,6 +5,8 @@ import { GradientButton } from "./GradientButton";
 import { SocialLinks } from "./SocialLinks";
 import { WorkflowDiagram } from "./WorkflowDiagram";
 import { HeroPortrait } from "./HeroPortrait";
+import { TechMarquee } from "./TechMarquee";
+
 
 export function HeroSection() {
   return (
@@ -77,6 +79,19 @@ export function HeroSection() {
         </div>
 
         <motion.div
+          initial={{ opacity: 0 }}
+          whileInView={{ opacity: 1 }}
+          viewport={{ once: true }}
+          transition={{ duration: 0.6 }}
+          className="mt-16"
+        >
+          <p className="mb-5 text-center text-[11px] font-semibold uppercase tracking-[0.22em] text-muted-foreground">
+            Automation Stack I Work With
+          </p>
+          <TechMarquee />
+        </motion.div>
+
+        <motion.div
           initial={{ opacity: 0, y: 24 }}
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true }}
@@ -85,6 +100,7 @@ export function HeroSection() {
         >
           <WorkflowDiagram />
         </motion.div>
+
 
         {/* Credibility cards */}
         <div className="mt-14 grid gap-5 md:grid-cols-3">

@@ -258,8 +258,16 @@
   }
   .animate-scan-sweep { animation: scan-sweep 2.4s linear infinite; }
 
+  @keyframes marquee-scroll {
+    0% { transform: translateX(0); }
+    100% { transform: translateX(-50%); }
+  }
+  .marquee-track { animation: marquee-scroll 38s linear infinite; }
+  .marquee-track:hover { animation-play-state: paused; }
+
+
   @media (prefers-reduced-motion: reduce) {
-    .float-slow, .pulse-node, .animated-border::after, .animate-scan-sweep { animation: none !important; }
+    .float-slow, .pulse-node, .animated-border::after, .animate-scan-sweep, .marquee-track { animation: none !important; }
     .card-hover:hover { transform: none; }
   }
 }
