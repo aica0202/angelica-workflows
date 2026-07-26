@@ -187,7 +187,7 @@ export const experience: ExperienceItem[] = [
   {
     role: "Marketing Operations Assistant",
     company: "Community Minerals",
-    period: "2026 – Present",
+    period: "Oct 2025 – Present",
     summary:
       "Manage data-heavy marketing operations processes while identifying opportunities to reduce manual work through automation, validation, structured data workflows, and process documentation.",
     bullets: [
