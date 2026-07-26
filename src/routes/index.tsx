@@ -13,7 +13,28 @@ import { Footer } from "@/components/portfolio/Footer";
 
 export const Route = createFileRoute("/")({
   component: Index,
+  head: () => ({
+    meta: [
+      { title: "AicaDev | AI Automation & Marketing Ops Portfolio" },
+      {
+        name: "description",
+        content:
+          "AicaDev builds AI-powered automation for marketing operations — n8n workflows, OCR document processing, API integrations, and reliable data pipelines.",
+      },
+      { property: "og:title", content: "AicaDev | AI Automation & Marketing Ops Portfolio" },
+      {
+        property: "og:description",
+        content:
+          "AI Automation Specialist and Marketing Operations professional building workflow automation with n8n, Python, APIs, and OCR.",
+      },
+      { property: "og:type", content: "website" },
+      { property: "og:url", content: "https://angelica-workflows.lovable.app/" },
+      { name: "twitter:card", content: "summary_large_image" },
+    ],
+    links: [{ rel: "canonical", href: "https://angelica-workflows.lovable.app/" }],
+  }),
 });
+
 
 function Index() {
   return (

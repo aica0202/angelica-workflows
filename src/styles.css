@@ -252,8 +252,14 @@
   .float-slow { animation: float-node 5s ease-in-out infinite; }
   .pulse-node { animation: pulse-node 3s ease-in-out infinite; }
 
+  @keyframes scan-sweep {
+    0% { transform: translateY(-100%); }
+    100% { transform: translateY(1000%); }
+  }
+  .animate-scan-sweep { animation: scan-sweep 2.4s linear infinite; }
+
   @media (prefers-reduced-motion: reduce) {
-    .float-slow, .pulse-node, .animated-border::after { animation: none !important; }
+    .float-slow, .pulse-node, .animated-border::after, .animate-scan-sweep { animation: none !important; }
     .card-hover:hover { transform: none; }
   }
 }

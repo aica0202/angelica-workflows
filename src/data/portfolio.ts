@@ -13,9 +13,11 @@ export const navLinks: NavLink[] = [
 ];
 
 export const profile = {
-  fullName: "Angelica Unclara",
-  initials: "AU",
-  username: "angelicaunclara",
+  fullName: "AicaDev",
+  legalName: "Angelica Unclara",
+  initials: "AD",
+  username: "aicadev",
+  tagline: "AI Automation Specialist · Marketing Operations · Workflow Automation",
   primaryTitle: "AI Automation Specialist",
   secondaryTitle: "Marketing Operations Professional",
   location: "Pampanga, Philippines",
@@ -24,8 +26,9 @@ export const profile = {
   linkedin: "[LinkedIn URL]",
   github: "[GitHub URL]",
   resumeUrl: "[Resume File URL]",
-  resumeFilename: "Angelica-Unclara-AI-Automation-Specialist-Resume.pdf",
+  resumeFilename: "AicaDev-AI-Automation-Specialist-Resume.pdf",
 };
+
 
 export interface CredibilityCard {
   title: string;
