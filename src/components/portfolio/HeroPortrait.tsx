@@ -8,7 +8,11 @@ export function HeroPortrait() {
       <div className="pointer-events-none absolute -inset-6 rounded-[2rem] bg-[radial-gradient(circle_at_50%_30%,color-mix(in_oklab,var(--accent)_28%,transparent),transparent_70%)] opacity-60 blur-2xl transition-opacity duration-700 group-hover:opacity-100" />
 
       <div className="relative aspect-square overflow-hidden rounded-[1.75rem] border border-border bg-card/60 backdrop-blur-sm transition-all duration-700 group-hover:border-accent/50 group-hover:shadow-[0_30px_80px_-30px_color-mix(in_oklab,var(--accent)_60%,transparent)]">
+        {/* Backdrop behind the cut-out portrait */}
+        <div className="absolute inset-0 bg-[radial-gradient(circle_at_50%_35%,color-mix(in_oklab,var(--primary)_30%,transparent),transparent_65%)] transition-opacity duration-700 group-hover:opacity-0" />
+
         {/* Base portrait */}
+
         <img
           src={portrait.url}
           alt="AicaDev — AI Automation Specialist and Marketing Operations professional"
