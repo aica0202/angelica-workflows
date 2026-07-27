@@ -99,12 +99,12 @@ export const Route = createRootRouteWithContext<{ queryClient: QueryClient }>()(
           "Explore the portfolio of AicaDev, an AI Automation Specialist and Marketing Operations Professional building practical workflows with n8n, Python, APIs, OCR, Slack, Outlook, Google Sheets, and data automation.",
       },
       { name: "theme-color", content: "#030712" },
-      { property: "og:image", content: "https://pub-bb2e103a32db4e198524a2e9ed8f35b4.r2.dev/2d4344ac-757a-4c30-9ea3-dbe025195217/id-preview-de2dad19--127561b7-33fc-4057-8beb-5ce65ed9b356.lovable.app-1784906095421.png" },
-      { name: "twitter:image", content: "https://pub-bb2e103a32db4e198524a2e9ed8f35b4.r2.dev/2d4344ac-757a-4c30-9ea3-dbe025195217/id-preview-de2dad19--127561b7-33fc-4057-8beb-5ce65ed9b356.lovable.app-1784906095421.png" },
+      { property: "og:site_name", content: "AicaDev" },
     ],
     links: [
       { rel: "stylesheet", href: appCss },
-      { rel: "icon", href: "/favicon.ico", type: "image/x-icon" },
+      { rel: "icon", href: "/aicadev-icon.png", type: "image/png" },
+      { rel: "apple-touch-icon", href: "/aicadev-icon.png" },
       { rel: "preconnect", href: "https://fonts.googleapis.com" },
       { rel: "preconnect", href: "https://fonts.gstatic.com", crossOrigin: "anonymous" },
       {
