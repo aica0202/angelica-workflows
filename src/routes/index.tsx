@@ -29,6 +29,8 @@ export const Route = createFileRoute("/")({
       },
       { property: "og:type", content: "website" },
       { property: "og:url", content: "https://angelica-workflows.lovable.app/" },
+      { property: "og:image", content: "https://angelica-workflows.lovable.app/aicadev-profile-ai.png" },
+      { name: "twitter:image", content: "https://angelica-workflows.lovable.app/aicadev-profile-ai.png" },
       { name: "twitter:card", content: "summary_large_image" },
     ],
     links: [{ rel: "canonical", href: "https://angelica-workflows.lovable.app/" }],
