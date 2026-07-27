@@ -1,5 +1,6 @@
-import portrait from "@/assets/aicadev-portrait.png.asset.json";
 import aiPortrait from "@/assets/aicadev-ai.png.asset.json";
+
+const portraitUrl = "/aicadev-profile.png";
 
 export function HeroPortrait() {
   return (
@@ -14,7 +15,7 @@ export function HeroPortrait() {
         {/* Base portrait */}
 
         <img
-          src={portrait.url}
+          src={portraitUrl}
           alt="AicaDev — AI Automation Specialist and Marketing Operations professional"
           className="absolute inset-0 h-full w-full object-cover object-top transition-all duration-700 ease-out group-hover:scale-[1.03] group-hover:opacity-0"
           loading="eager"
