@@ -1,5 +1,6 @@
-import portrait from "@/assets/aicadev-portrait.png.asset.json";
 import aiPortrait from "@/assets/aicadev-ai.png.asset.json";
+
+const portraitUrl = "/aicadev-profile.png";
 
 export function HeroPortrait() {
   return (
