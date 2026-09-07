@@ -6,7 +6,7 @@ import { SectionHoverDot } from "./SectionHoverDot";
 
 export function EducationSection() {
   return (
-    <section id="education" className="relative py-24 md:py-32 bg-section overflow-hidden">
+    <section id="education" className="group relative py-24 md:py-32 bg-section overflow-hidden">
       <SectionHoverDot label="Education" sectionId="education" />
       <div className="absolute inset-0 bg-radial-section" />
       <div className="relative mx-auto max-w-6xl px-4 sm:px-6 lg:px-8">

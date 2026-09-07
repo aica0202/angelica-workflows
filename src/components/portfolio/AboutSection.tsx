@@ -8,7 +8,7 @@ const icons = [Layers, ShieldCheck, Users, TrendingUp];
 
 export function AboutSection() {
   return (
-    <section id="about" className="relative py-24 md:py-32 bg-section overflow-hidden">
+    <section id="about" className="group relative py-24 md:py-32 bg-section overflow-hidden">
       <SectionHoverDot label="About" sectionId="about" />
       <div className="absolute inset-0 bg-radial-section" />
       <div className="relative mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">

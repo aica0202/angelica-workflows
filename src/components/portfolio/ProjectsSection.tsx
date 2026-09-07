@@ -5,7 +5,7 @@ import { SectionHoverDot } from "./SectionHoverDot";
 
 export function ProjectsSection() {
   return (
-    <section id="projects" className="relative py-24 md:py-32 overflow-hidden">
+    <section id="projects" className="group relative py-24 md:py-32 overflow-hidden">
       <SectionHoverDot label="Projects" sectionId="projects" />
       <div className="absolute inset-0 bg-radial-section" />
       <div className="relative mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
