@@ -4,6 +4,7 @@ import { Mail, MapPin, Send, CheckCircle2, Linkedin, Github, Clock } from "lucid
 import { profile, projectTypes } from "@/data/portfolio";
 import { SectionHeading } from "./SectionHeading";
 import { GradientButton } from "./GradientButton";
+import { SectionHoverDot } from "./SectionHoverDot";
 
 export function ContactSection() {
   const [submitted, setSubmitted] = useState(false);
@@ -25,8 +26,6 @@ export function ContactSection() {
     { Icon: MapPin, label: "Location", value: profile.location },
     { Icon: Clock, label: "Availability", value: profile.availability },
   ];
-
-import { SectionHoverDot } from "./SectionHoverDot";
 
   return (
     <section id="contact" className="relative py-24 md:py-32 overflow-hidden">
