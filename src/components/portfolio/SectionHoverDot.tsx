@@ -24,7 +24,7 @@ export function SectionHoverDot({ label, sectionId }: SectionHoverDotProps) {
     <button
       type="button"
       onClick={handleClick}
-      className="pointer-events-none absolute left-4 top-24 z-10 hidden items-center gap-3 opacity-0 transition-opacity duration-500 group-hover:opacity-100 lg:left-8 lg:flex"
+      className="pointer-events-none absolute left-4 top-24 z-10 hidden items-center gap-3 opacity-0 transition-all duration-500 group-hover:pointer-events-auto group-hover:opacity-100 lg:left-8 lg:flex"
       aria-label={`Copy link to ${label} section`}
     >
       <span className="relative flex h-3 w-3">
