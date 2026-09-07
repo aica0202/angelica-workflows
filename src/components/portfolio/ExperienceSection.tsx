@@ -2,10 +2,12 @@ import { motion } from "motion/react";
 import { Briefcase, CheckCircle2 } from "lucide-react";
 import { experience } from "@/data/portfolio";
 import { SectionHeading } from "./SectionHeading";
+import { SectionHoverDot } from "./SectionHoverDot";
 
 export function ExperienceSection() {
   return (
-    <section id="experience" className="relative py-24 md:py-32 bg-section overflow-hidden">
+    <section id="experience" className="group relative py-24 md:py-32 bg-section overflow-hidden">
+      <SectionHoverDot label="Experience" sectionId="experience" />
       <div className="absolute inset-0 bg-radial-section" />
       <div className="relative mx-auto max-w-6xl px-4 sm:px-6 lg:px-8">
         <SectionHeading

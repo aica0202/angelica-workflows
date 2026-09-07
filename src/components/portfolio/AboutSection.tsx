@@ -2,12 +2,14 @@ import { motion } from "motion/react";
 import { Layers, ShieldCheck, Users, TrendingUp } from "lucide-react";
 import { principles } from "@/data/portfolio";
 import { SectionHeading } from "./SectionHeading";
+import { SectionHoverDot } from "./SectionHoverDot";
 
 const icons = [Layers, ShieldCheck, Users, TrendingUp];
 
 export function AboutSection() {
   return (
-    <section id="about" className="relative py-24 md:py-32 bg-section overflow-hidden">
+    <section id="about" className="group relative py-24 md:py-32 bg-section overflow-hidden">
+      <SectionHoverDot label="About" sectionId="about" />
       <div className="absolute inset-0 bg-radial-section" />
       <div className="relative mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
         <div className="grid gap-12 lg:grid-cols-[1fr_1.1fr] lg:gap-16">
@@ -17,6 +19,21 @@ export function AboutSection() {
               title="Operations Experience Meets Intelligent Automation"
               className="mb-0"
             />
+            <motion.div
+              initial={{ opacity: 0, y: 24 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              viewport={{ once: true }}
+              transition={{ duration: 0.6, delay: 0.1 }}
+              className="mt-8 relative aspect-[4/3] w-full max-w-md overflow-hidden rounded-2xl border border-border bg-card/60"
+            >
+              <img
+                src="/aicadev-profile.png"
+                alt="AicaDev — AI Automation Specialist and Marketing Operations professional"
+                className="h-full w-full object-cover object-top"
+                loading="lazy"
+              />
+              <div className="pointer-events-none absolute inset-0 bg-gradient-to-t from-background/40 to-transparent" />
+            </motion.div>
             <div className="mt-8 space-y-5 text-base leading-relaxed text-muted-foreground">
               <p>
                 I am a Marketing Operations professional transitioning deeper into AI and workflow automation. My
