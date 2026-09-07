@@ -20,9 +20,12 @@ const iconMap: Record<string, LucideIcon> = {
   TrendingUp,
 };
 
+import { SectionHoverDot } from "./SectionHoverDot";
+
 export function ProcessSection() {
   return (
     <section id="process" className="relative py-24 md:py-32 bg-section overflow-hidden">
+      <SectionHoverDot label="Process" sectionId="process" />
       <div className="absolute inset-0 bg-radial-section" />
       <div className="relative mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
         <SectionHeading

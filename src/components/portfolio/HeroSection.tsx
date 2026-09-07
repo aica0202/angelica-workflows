@@ -8,9 +8,12 @@ import { HeroPortrait } from "./HeroPortrait";
 import { TechMarquee } from "./TechMarquee";
 
 
+import { SectionHoverDot } from "./SectionHoverDot";
+
 export function HeroSection() {
   return (
     <section id="home" className="relative pt-28 pb-20 md:pt-36 md:pb-28 overflow-hidden">
+      <SectionHoverDot label="Home" sectionId="home" />
       <div className="absolute inset-0 bg-radial-hero" />
       <div className="absolute inset-0 grid-lines opacity-30" />
 
